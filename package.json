@@ -1,5 +1,5 @@
 {
-  "name": "js-du-result",
+  "name": "@tettekete/du-result",
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
@@ -9,10 +9,16 @@
     "prepack": "npm run build",
     "lint": "eslint"
   },
-  "keywords": [],
+  "keywords": [
+    "object"
+  ],
   "author": "tettekete",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tettekete/js-du-result-object"
+  },
   "license": "MIT",
-  "description": "",
+  "description": "This class module returns a Result object based on a discriminated union.",
   "devDependencies": {
     "@eslint/js": "^9.31.0",
     "@stylistic/eslint-plugin": "^5.2.0",
