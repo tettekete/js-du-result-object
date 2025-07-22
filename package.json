@@ -6,7 +6,8 @@
     "test": "jest",
     "build": "rm -rf dist && webpack build --mode production",
     "dev": "npm run build; node dist/index.js",
-    "prepack": "npm run build",
+    "prepack": "npm run build && rm README.md && cp -f ./docs/README.md README.md",
+    "postpack": "git checkout README.md",
     "lint": "eslint"
   },
   "keywords": [
